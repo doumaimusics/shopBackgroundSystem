@@ -1,0 +1,87 @@
+/* 
+    规则中心样式
+*/
+   // 平台规则列表 和 商家协议列表 样式
+   .list_box{
+        background: #f0f2f5;
+        padding: 24px;
+        box-sizing: border-box;
+        
+        .content_box{
+             min-height: calc(100vh - 50px);
+             background: #fff;
+        
+            .title{
+                
+                height: 55px;
+                border-bottom:1px solid #E9E9E9; 
+                padding-left: 32px;
+                font-size:16px;
+                font-family:PingFangSC-Medium;
+                font-weight:500;
+                color:rgba(0,0,0,0.85);
+                line-height:55px;
+            }
+            .list{
+                padding: 25px 420px 0 32px;
+                
+                ul{
+                    margin-bottom: 160px;
+                    li{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 24px;
+                        font-size: 16px;
+                        color:rgba(0,0,0,0.65);
+                        cursor: pointer;
+                        .time{
+                            color:rgba(0,0,0,0.35);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 平台规则详情 和 商家协议上去 样式
+    .details_box{
+        background: #f0f2f5;
+        padding: 24px;
+        box-sizing: border-box;
+        .details_content{
+            background: #fff;
+            min-height: calc(100vh - 50px);
+            padding: 32px 43px;
+            .title_box{
+                border-bottom: 1px solid #E9E9E9;
+                font-family:PingFangSC-Medium;
+                padding-bottom: 32px;
+                text-align: center;
+                h4{
+                    font-size:16px;
+                    font-weight:500;
+                    color:rgba(0,0,0,0.85);
+                    line-height:24px;
+                    margin-bottom: 8px;
+                }
+                p{
+                    font-size:14px;
+                    font-weight:400;
+                    color:rgba(0,0,0,0.45);
+                    line-height:20px;
+                }
+            }
+            .content_box{
+                padding: 24px 165px;
+                font-size:14px;
+                font-family:PingFangSC-Regular;
+                font-weight:400;
+                color:rgba(0,0,0,0.65);
+                line-height:20px;
+                margin-bottom: 40px;
+            }
+            .btn_box{
+                text-align: center;
+            }
+        }
+    }

@@ -1,0 +1,244 @@
+.shopCon {
+  padding: 20px;
+  width: 1100px;
+  margin: 0 auto;
+}
+h3 {
+  width: 900px;
+  padding-top: 20px;
+  font-weight: 700;
+}
+h4 {
+  font-weight: 700;
+  padding: 10px 0;
+}
+.avatar-uploader{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+
+  /deep/ .el-upload {
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      border-color: #409EFF;
+    }
+  }
+  .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    position: relative;
+
+    .limit {
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      display: inline-block;
+      width: 100%;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+}
+.avatar {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+}
+// 已上传图片列表容器
+.avatar-img-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+
+  .imgDelete {
+    display: none;
+  }
+  &:hover {
+    .imgDelete {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: rgba(0, 0, 0, .5);
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      cursor: pointer;
+
+      i {
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+  }
+}
+.shopCon .title {
+  text-align: center;
+}
+.shopForm{
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  .line{
+    /deep/ .el-form-item__error{left: 55px;}
+    /deep/ .el-form-item__label{
+      display: inline-block;
+      width: 155px !important;
+      text-align: left;
+    }
+  }
+      /deep/ .el-form-item.is-required:not(.is-no-asterisk)>.el-form-item__label:before {
+        margin-right: 0;
+      }
+  .inputBox{
+    display: inline-block;
+    width: 600px;
+  }
+  .saleTypeBox{
+    display: inline-block;
+    width: 650px;
+    .el-checkbox{
+      margin-left: 0;
+      margin-right: 25px;
+      margin-bottom: 10px;
+    }
+  }
+  .addressSelect{
+    .addrline{
+      width: 800px;
+      display: inline-block;
+    }
+    .inputBox.addMargin{
+      margin-left: 55px;
+    }
+  }
+  .afterSaleAddress{
+    margin-left: 55px;
+  }
+  .btnBox,
+  .agreeBox {
+    padding-top: 20px;
+    // padding-left: 150px;
+  }
+  .el-form-item.is-required {
+    /deep/ .el-form-item__label:before {
+      content: '';
+    }
+  }
+
+  // 商标类型组
+  .brandList {
+    em {
+      font-size: 14px;
+      color: #999;
+    }
+  }
+
+  .trademrakNameTip {
+    color: #999;
+    padding-left: 55px;
+    font-size: 12px;
+  }
+
+  // 主推商品
+  .mainGoodsList {
+    padding-top: 20px;
+    position: relative;
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+    }
+    h4 {
+      font-size: 16px;
+      padding-bottom: 5px;
+    }
+    em {
+      font-size: 14px;
+      color: #999;
+    }
+    hr {
+      width: 820px;
+      margin-bottom: 20px;
+    }
+    .tip {
+      padding: 10px 150px 5px;
+      color: #999;
+    }
+    // 校验成功提示
+    .mainItem {
+      &:not(:first-of-type) {
+        /deep/ .el-input__inner {
+          border-color: #dcdfe6;
+        }
+        /deep/ .el-icon-circle-check::before {
+          content: '';
+        }
+      }
+    }
+  }
+
+  // 多图上传照片墙样式
+  .avatar-uploader {
+    /deep/ .el-upload-list--picture {
+      display: flex;
+    }
+  }
+  .avatar-img-wrapper {
+    margin-left: 3px;
+  }
+
+  .choose {
+    margin-right: 50px;
+  }
+
+}
+// 查看大图
+.shopCon {
+  .bigImg{
+    width:650px;
+    height: 600px;
+    margin: auto;
+    text-align: center;
+    &:before{
+      content: "";display: inline-block;height: 100%;vertical-align: middle;width: 0;
+    }
+    .img{
+      display: inline-block; max-width: 650px; height: 600px;vertical-align: middle;
+    }
+  }
+}
+// 多选框组
+.el-checkbox-group {
+  width: 780px;
+  display: flex;
+  flex-wrap: wrap;
+  label {
+    width: 33%;
+  }
+  .el-checkbox+.el-checkbox {
+    margin-left: 0;
+  }
+}
+// 已上传的图片容器
+.avatar-img-box {
+  display: inline-block;
+  width: 680px;
+  vertical-align: top;
+}
+// 添加更多按钮
+.addBtn {
+  margin-left: 55px;
+}
