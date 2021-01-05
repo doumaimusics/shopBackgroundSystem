@@ -18,7 +18,7 @@
     "url": "http://192.168.106.70/nizhiwei/alading-shop"
   },
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
     "codemirror": "5.32.0",
     "connect": "3.6.6",
